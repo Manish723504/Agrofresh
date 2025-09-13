@@ -1,0 +1,68 @@
+/* Feedback.css */
+
+/* Outer container with background */
+.contact-container {
+  background-image: url('/images/feedback-bg.jpg'); /* Ensure image is in /public/images */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Form box with white overlay */
+.contact-box {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 600px;
+  width: 100%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Form fields */
+.contact-form h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #2d572c;
+}
+
+.contact-form p {
+  font-size: 16px;
+  color: #333;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 16px;
+}
+
+.contact-form button:hover {
+  background-color: #218838;
+}
+
+/* Responsive tweak (optional) */
+@media screen and (max-width: 576px) {
+  .contact-box {
+    padding: 20px;
+  }
+}
