@@ -64,6 +64,7 @@ return(
             type="text"
             name="name"
             placeholder="Name"
+            required
             onChange={FetchData}
             value={contact.name}
           />
@@ -71,6 +72,7 @@ return(
             type="email"
             name="email"
             placeholder="Email"
+            required
             onChange={FetchData}
             value={contact.email}
           />
@@ -78,15 +80,20 @@ return(
             type="tel"
             name="phone"
             placeholder="Phone"
-           onChange={FetchData}
-           value={contact.phone}
+            required
+            inputmode="numeric"
+            maxlength="10"
+            pattern="\d{10}"
+            onChange={FetchData}
+            value={contact.phone}
           />
           <textarea
             name="message"
             placeholder="Write your message"
+            required
             rows="4"
-           onChange={FetchData}
-          value={contact.question}
+            onChange={FetchData}
+            value={contact.question}
           ></textarea>
 
           <button type="submit">Send Message</button>

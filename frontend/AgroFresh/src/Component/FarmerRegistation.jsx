@@ -73,7 +73,7 @@ function FarmerRegistration() {
       >
         <div className="container bg-white p-4 p-md-5 rounded shadow-lg" style={{ maxWidth: "850px", width: "100%" }}>
           {/* Heading */}
-          <h2 className="text-center text-success mb-4">👨‍🌾 Farmer Registration Form</h2>
+          <h2 className="text-center text-success mb-4"> Farmer Registration Form</h2>
 
           <form className="row g-3" onSubmit={submitData}>
             <div className="col-md-6 col-12">
@@ -124,7 +124,7 @@ function FarmerRegistration() {
                 id="inputPhone"
                 name="phone"
                 pattern="^\d{10}$"
-                  maxLength="10"
+                maxLength="10"
                 value={regData.phone}
                 onChange={fetchData}
                 required
